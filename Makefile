@@ -54,6 +54,7 @@ install: default
 endif
 	mkdir -p $(DESTDIR)$(LIB_PREFIX)
 	cp -f $(SHARED_TARGET) $(DESTDIR)$(LIB_PREFIX)
+	cp -f $(STATIC_TARGET) $(DESTDIR)$(LIB_PREFIX)
 ifdef DEVEL
 	cp -f $(STATIC_TARGET) $(DESTDIR)$(LIB_PREFIX)
 endif
