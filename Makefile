@@ -19,7 +19,7 @@ HEADER_INSTALL_TARGETS := $(patsubst src/incl/45d/%.hpp, $(DESTDIR)$(INCLUDE_PRE
 ifdef DEVEL
 default: dev
 else
-default: shared
+default: shared static
 endif
 all: default
 
